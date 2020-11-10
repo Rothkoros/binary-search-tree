@@ -42,7 +42,6 @@ class BinarySearchTree {
     }
     find(key) {
         let node = this.root;
-        let doneNotFound = false;
         while (node) {
             if (key == node.element.key) {
                 return true;
@@ -52,7 +51,7 @@ class BinarySearchTree {
                 node = node.right;
             }
         }
-        return doneNotFound;
+        return false
     }
 
 }
